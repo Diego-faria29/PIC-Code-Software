@@ -1,0 +1,6 @@
+C:\Users\digui\OneDrive\Área de Trabalho\Unis\terceiro periodo\PIC\MODELO\bin\Debug\MODELO.dll
+C:\Users\digui\OneDrive\Área de Trabalho\Unis\terceiro periodo\PIC\MODELO\bin\Debug\MODELO.pdb
+C:\Users\digui\OneDrive\Área de Trabalho\Unis\terceiro periodo\PIC\MODELO\obj\Debug\MODELO.csprojAssemblyReference.cache
+C:\Users\digui\OneDrive\Área de Trabalho\Unis\terceiro periodo\PIC\MODELO\obj\Debug\MODELO.csproj.CoreCompileInputs.cache
+C:\Users\digui\OneDrive\Área de Trabalho\Unis\terceiro periodo\PIC\MODELO\obj\Debug\MODELO.dll
+C:\Users\digui\OneDrive\Área de Trabalho\Unis\terceiro periodo\PIC\MODELO\obj\Debug\MODELO.pdb

@@ -21,7 +21,7 @@ namespace BLL
         {
             try
             {
-                string strPadrao2 = @"^\d{3}\.\d{3}\.\d{3}\-\d{2}$";
+                string strPadrao2 = @"(^\d{3}\.\d{3}\.\d{3}\-\d{2}$)|(^\d{11}$)";
                 if (!System.Text.RegularExpressions.Regex.IsMatch(modeloCliente.Cpf, strPadrao2))
                 {
                     throw new ArgumentNullException("CPF", "CPF Inválido");

@@ -156,7 +156,7 @@
             // 
             this.BTNCad.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BTNCad.ForeColor = System.Drawing.SystemColors.Window;
-            this.BTNCad.Location = new System.Drawing.Point(278, 298);
+            this.BTNCad.Location = new System.Drawing.Point(44, 298);
             this.BTNCad.Name = "BTNCad";
             this.BTNCad.Size = new System.Drawing.Size(132, 37);
             this.BTNCad.TabIndex = 11;

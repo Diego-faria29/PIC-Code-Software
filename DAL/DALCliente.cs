@@ -25,15 +25,15 @@ namespace DAL
             {
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = this.conexao.ObjConexao;
-                cmd.CommandText = "INSERT INTO cliente (id_cliente, nome, email, cpf, telefone, endereco) " +
-                    "VALUES (NULL, @nome, @email, @cpf, @telefone, @endereco);" ;
+                cmd.CommandText = "INSERT INTO cliente (id_cliente, nome, email, cpf, telefone, endereco, valor_pendente) " +
+                    "VALUES (NULL, @nome, @email, @cpf, @telefone, @endereco, @valor_pendente);" ;
                     
                 cmd.Parameters.AddWithValue("@nome", modeloCliente.Nome);
                 cmd.Parameters.AddWithValue("@email", modeloCliente.Email);
                 cmd.Parameters.AddWithValue("@cpf", modeloCliente.Cpf);
                 cmd.Parameters.AddWithValue("@telefone", modeloCliente.Telefone);
                 cmd.Parameters.AddWithValue("@endereco", modeloCliente.Endereco);
-
+                cmd.Parameters.AddWithValue("@valor_pendente", 0);
 
                 conexao.Conectar();
                 int ID = Convert.ToInt32(cmd.ExecuteScalar());

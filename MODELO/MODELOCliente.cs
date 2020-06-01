@@ -14,6 +14,7 @@ namespace MODELO
         private string cpf;
         private string telefone;
         private string endereco;
+        private float valor_pendente;
 
         public int Id_cliente { get => id_cliente; set => id_cliente = value; }
         public string Nome { get => nome; set => nome = value; }
@@ -21,5 +22,6 @@ namespace MODELO
         public string Cpf { get => cpf; set => cpf = value; }
         public string Telefone { get => telefone; set => telefone = value; }
         public string Endereco { get => endereco; set => endereco = value; }
+        public float Valor_pendente { get => valor_pendente; set => valor_pendente = value; }
     }
 }

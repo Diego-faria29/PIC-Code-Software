@@ -11,6 +11,7 @@ using BLL;
 using DAL;
 using MODELO;
 using MySql.Data.MySqlClient;
+using UI;
 
 namespace SoftwarePIC
 {
@@ -58,5 +59,10 @@ namespace SoftwarePIC
             }
         }
 
+        private void BTNbuscar_Click(object sender, EventArgs e)
+        {
+            FRMconsulta f = new FRMconsulta();
+            f.ShowDialog();
+        }
     }
 }

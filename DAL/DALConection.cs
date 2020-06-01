@@ -23,9 +23,14 @@ namespace DAL
             get { return conexao; }
             set { conexao = value; }
         }
-        public void Conectar()
+        public MySqlConnection Conectar()
         {
-            this.conexao.Open();
+            if(conexao.State == System.Data.ConnectionState.Closed)
+            {
+                this.conexao.Open();
+            }
+                
+            return conexao;
         }
         public void Desconectar()
         {

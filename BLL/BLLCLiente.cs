@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 using DAL;
 using MODELO;
 using MySql.Data.MySqlClient;
+using System.Data;
 /*Business Logic Layer*/
 namespace BLL
 {
     public class BLLCLiente
     {
         private DALCliente DALcliente;
+
+        public String mensagem = "";
         public BLLCLiente ( DALConection cx)
         {
-            DALcliente = new DALCliente(cx);
+            this.DALcliente = new DALCliente(cx);
         }
 
         public void Incluir (MODELOCliente modeloCliente)
@@ -45,6 +48,16 @@ namespace BLL
             {
                 throw error2;
             }
+        }
+
+
+        public DataTable verificar(String nome, String cpf)
+        {
+            if (!DALcliente.mensagem.Equals(""))
+            {
+                this.mensagem = DALcliente.mensagem;
+            }
+            return DALcliente.VefificarCadastro(nome, cpf);
         }
     }
 }

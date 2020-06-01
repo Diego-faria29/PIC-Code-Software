@@ -59,3 +59,4 @@ C:\Users\digui\OneDrive\Área de Trabalho\copy\project\SoftwarePIC\obj\Debug\UI.
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\SoftwarePIC\obj\Debug\UI.csproj.CopyComplete
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\SoftwarePIC\obj\Debug\UI.exe
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\SoftwarePIC\obj\Debug\UI.pdb
+C:\Users\digui\OneDrive\Área de Trabalho\copy\project\SoftwarePIC\obj\Debug\UI.FRMconsulta.resources

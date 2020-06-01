@@ -41,6 +41,7 @@
             this.textBox4Telefone = new System.Windows.Forms.TextBox();
             this.textBox5Endereco = new System.Windows.Forms.TextBox();
             this.BTNCad = new System.Windows.Forms.Button();
+            this.BTNbuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBLNome
@@ -156,13 +157,25 @@
             // 
             this.BTNCad.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BTNCad.ForeColor = System.Drawing.SystemColors.Window;
-            this.BTNCad.Location = new System.Drawing.Point(44, 298);
+            this.BTNCad.Location = new System.Drawing.Point(540, 301);
             this.BTNCad.Name = "BTNCad";
             this.BTNCad.Size = new System.Drawing.Size(132, 37);
             this.BTNCad.TabIndex = 11;
-            this.BTNCad.Text = "Inserir";
+            this.BTNCad.Text = "Cadastrar";
             this.BTNCad.UseVisualStyleBackColor = false;
             this.BTNCad.Click += new System.EventHandler(this.BTNCad_Click);
+            // 
+            // BTNbuscar
+            // 
+            this.BTNbuscar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BTNbuscar.ForeColor = System.Drawing.SystemColors.Window;
+            this.BTNbuscar.Location = new System.Drawing.Point(387, 301);
+            this.BTNbuscar.Name = "BTNbuscar";
+            this.BTNbuscar.Size = new System.Drawing.Size(132, 37);
+            this.BTNbuscar.TabIndex = 12;
+            this.BTNbuscar.Text = "Buscar";
+            this.BTNbuscar.UseVisualStyleBackColor = false;
+            this.BTNbuscar.Click += new System.EventHandler(this.BTNbuscar_Click);
             // 
             // FRMCliente
             // 
@@ -174,6 +187,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.BTNbuscar);
             this.Controls.Add(this.BTNCad);
             this.Controls.Add(this.textBox5Endereco);
             this.Controls.Add(this.textBox4Telefone);
@@ -189,6 +203,8 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(900, 1000);
@@ -215,6 +231,7 @@
         private System.Windows.Forms.TextBox textBox4Telefone;
         private System.Windows.Forms.TextBox textBox5Endereco;
         private System.Windows.Forms.Button BTNCad;
+        private System.Windows.Forms.Button BTNbuscar;
     }
 }
 

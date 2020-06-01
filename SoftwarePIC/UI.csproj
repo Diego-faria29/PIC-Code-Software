@@ -56,10 +56,19 @@
     <Compile Include="FRMCliente.Designer.cs">
       <DependentUpon>FRMCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMconsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMconsulta.designer.cs">
+      <DependentUpon>FRMconsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FRMCliente.resx">
       <DependentUpon>FRMCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMconsulta.resx">
+      <DependentUpon>FRMconsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -69,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +106,9 @@
       <Project>{BEA10785-3295-45CB-8D03-F5FB0E509BC0}</Project>
       <Name>MODELO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color-2174049_1280.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

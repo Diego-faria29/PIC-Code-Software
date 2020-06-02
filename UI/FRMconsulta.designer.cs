@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMconsulta));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnconsulta = new System.Windows.Forms.Button();
@@ -63,6 +64,7 @@
             // btnconsulta
             // 
             this.btnconsulta.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnconsulta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnconsulta.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnconsulta.ForeColor = System.Drawing.SystemColors.Control;
             this.btnconsulta.Location = new System.Drawing.Point(435, 147);
@@ -76,6 +78,7 @@
             // btnsair
             // 
             this.btnsair.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnsair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsair.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsair.ForeColor = System.Drawing.SystemColors.Control;
             this.btnsair.Location = new System.Drawing.Point(575, 147);
@@ -93,7 +96,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(563, 32);
             this.txtNome.TabIndex = 4;
-
             // 
             // txtCPF
             // 
@@ -118,11 +120,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = global::SoftwarePIC.Properties.Resources.color_2174049_1280;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 617);
-            this.ControlBox = false;
             this.Controls.Add(this.dtgrid1);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtNome);
@@ -130,9 +132,13 @@
             this.Controls.Add(this.btnconsulta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "FRMconsulta";
-            this.Text = "TREG.CONTROL. - Consulta Cadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TREG.CONTROL. - CONSULTAR CLIENTE";
             this.TransparencyKey = System.Drawing.Color.Maroon;
             ((System.ComponentModel.ISupportInitialize)(this.dtgrid1)).EndInit();
             this.ResumeLayout(false);

@@ -59,10 +59,9 @@ namespace SoftwarePIC
             }
         }
 
-        private void BTNbuscar_Click(object sender, EventArgs e)
-        {
-            FRMconsulta f = new FRMconsulta();
-            f.ShowDialog();
-        }
+
+
+
+
     }
 }

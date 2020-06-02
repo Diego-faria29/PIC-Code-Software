@@ -16,7 +16,7 @@ namespace SoftwarePIC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRMCliente());
+            Application.Run(new Menu());
             
         }
     }

@@ -29,5 +29,11 @@ namespace SoftwarePIC
             FRMCliente c = new FRMCliente();
             c.ShowDialog();
         }
+
+        private void BTN_Venda_Click(object sender, EventArgs e)
+        {
+            Venda v = new Venda();
+            v.ShowDialog();
+        }
     }
 }

@@ -47,6 +47,7 @@
     <Compile Include="DadosDaConexao.cs" />
     <Compile Include="DALCliente.cs" />
     <Compile Include="DALConection.cs" />
+    <Compile Include="DALVenda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

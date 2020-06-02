@@ -92,3 +92,4 @@ C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\UI.csproj.Co
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\UI.exe
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\UI.pdb
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.Menu.resources
+C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.Venda.resources

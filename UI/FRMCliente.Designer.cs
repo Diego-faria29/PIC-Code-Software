@@ -171,7 +171,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 617);
@@ -198,7 +198,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(900, 1000);
             this.Name = "FRMCliente";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "TREG.CONTROL. - CADASTRO DE CLIENTE ";
             this.TransparencyKey = System.Drawing.Color.Maroon;
             this.ResumeLayout(false);

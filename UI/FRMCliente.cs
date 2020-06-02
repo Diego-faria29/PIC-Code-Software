@@ -45,7 +45,7 @@ namespace SoftwarePIC
             {
                 if(error.Message.Contains("Duplicate "))
                 {
-                    MessageBox.Show("Falha ao cadastrar. Usuário ou Cpf já cadastrado. ");
+                    MessageBox.Show("Falha ao cadastrar. CPF ou Email já cadastrado.");
                 }
                 else
                 {

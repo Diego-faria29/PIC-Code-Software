@@ -137,7 +137,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "FRMconsulta";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "TREG.CONTROL. - CONSULTAR CLIENTE";
             this.TransparencyKey = System.Drawing.Color.Maroon;
             ((System.ComponentModel.ISupportInitialize)(this.dtgrid1)).EndInit();

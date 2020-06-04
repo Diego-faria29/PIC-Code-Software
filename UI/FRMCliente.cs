@@ -38,7 +38,9 @@ namespace SoftwarePIC
                 modelocliente.Telefone = textBox4Telefone.Text;
                 modelocliente.Endereco = textBox5Endereco.Text;
 
+
                 bllcliente.Incluir(modelocliente);
+               // textboxIDclientcad.Text = modelocliente.Id_cliente.ToString();
                 MessageBox.Show("Cliente inserido com sucesso!") ;
             }
             catch (MySqlException error)
@@ -58,7 +60,6 @@ namespace SoftwarePIC
                 MessageBox.Show("Falha ao cadastrar. Erro inesperado: " + error2.Message);
             }
         }
-
 
 
 

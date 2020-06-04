@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
@@ -35,6 +36,10 @@ namespace BLL
                 {
                     throw new ArgumentNullException("Valor total", "Valor total não pode ser 0");
                 }
+                if (modeloVenda.Forma_pagamento == "")
+                {
+                    throw new ArgumentNullException("Forma de pagamento", "Alguma forma de pagamento deve ser selecionada");
+                }
                 DALvenda.Vender(modeloVenda);
             }
             catch (MySqlException error)
@@ -46,6 +51,21 @@ namespace BLL
                 throw error2;
             }
 
+        }
+
+        public DataTable localizar(string texto)
+        {
+            return DALvenda.localizar(texto);
+        }
+
+        public void Excluir(int codigo)
+        {
+            if (codigo <= 0)
+            {
+
+                throw new ArgumentNullException("ID", "Para deletar código, não pode estar zerado!");
+            }
+            DALvenda.Excluir(codigo);
         }
 
     }

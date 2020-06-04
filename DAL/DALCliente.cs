@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MODELO;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.ComponentModel.Design;
 
 namespace DAL
 {
@@ -18,29 +19,31 @@ namespace DAL
         {
             this.conexao = cx;
         }
-        
-        public void IncluirDados (MODELOCliente modeloCliente)
+
+        public void IncluirDados(MODELOCliente modeloCliente)
         {
             try
             {
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = this.conexao.ObjConexao;
                 cmd.CommandText = "INSERT INTO cliente (id_cliente, nome, email, cpf, telefone, endereco, valor_pendente) " +
-                    "VALUES (NULL, @nome, @email, @cpf, @telefone, @endereco, @valor_pendente);" ;
+                    "VALUES (@id_cliente, @nome, @email, @cpf, @telefone, @endereco, @valor_pendente);SELECT LAST_INSERT_ID();";
                     
                 cmd.Parameters.AddWithValue("@nome", modeloCliente.Nome);
                 cmd.Parameters.AddWithValue("@email", modeloCliente.Email);
                 cmd.Parameters.AddWithValue("@cpf", modeloCliente.Cpf);
                 cmd.Parameters.AddWithValue("@telefone", modeloCliente.Telefone);
                 cmd.Parameters.AddWithValue("@endereco", modeloCliente.Endereco);
-                cmd.Parameters.AddWithValue("@valor_pendente", 0);
+                cmd.Parameters.AddWithValue("@valor_pendente", modeloCliente.Valor_pendente);
+                cmd.Parameters.AddWithValue("@id_cliente", modeloCliente.Id_cliente);
 
                 conexao.Conectar();
                 int ID = Convert.ToInt32(cmd.ExecuteScalar());
 
                 modeloCliente.Id_cliente = ID;
 
-                conexao.Desconectar();
+
+
             }
             catch (MySqlException error)
             {
@@ -50,7 +53,78 @@ namespace DAL
             {
                 throw error2;
             }
+            finally
+            {
+                this.conexao.Desconectar();
+            }
         }
+
+        public void Alterar(MODELOCliente modeloCliente)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = this.conexao.ObjConexao;
+                cmd.CommandText = "UPDATE cliente SET nome = @nome," +
+                                  " email = @email," +
+                                  " cpf = @cpf," +
+                                  " telefone = @telefone," +
+                                  " endereco = @endereco," +
+                                  " valor_pendente = @valor_pendente" +
+                                  " WHERE " +
+                                  " id_cliente = @id_cliente";
+                cmd.Parameters.AddWithValue("@nome", modeloCliente.Nome);
+                cmd.Parameters.AddWithValue("@email", modeloCliente.Email);
+                cmd.Parameters.AddWithValue("@cpf", modeloCliente.Cpf);
+                cmd.Parameters.AddWithValue("@telefone", modeloCliente.Telefone);
+                cmd.Parameters.AddWithValue("@endereco", modeloCliente.Endereco);
+                cmd.Parameters.AddWithValue("@valor_pendente", modeloCliente.Valor_pendente);
+                cmd.Parameters.AddWithValue("@id_cliente", modeloCliente.Id_cliente);
+
+                this.conexao.Conectar();
+                cmd.ExecuteNonQuery();//executa carry no banco 
+            }
+            catch (MySqlException error)
+            {
+                throw error;
+            }
+            catch (Exception error2)
+            {
+                throw error2;
+            }
+            finally
+            {
+                this.conexao.Desconectar();
+            }
+
+        }
+
+        public void Excluir(int codigo)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = this.conexao.ObjConexao;
+
+                cmd.CommandText = "DELETE FROM cliente WHERE id_cliente = @id_cliente";
+                cmd.Parameters.AddWithValue("@id_cliente", codigo);
+                this.conexao.Conectar();
+                cmd.ExecuteNonQuery();
+            }
+            catch (MySqlException error)
+            {
+                throw error;
+            }
+            catch (Exception error2)
+            {
+                throw error2;
+            }
+            finally
+            {
+                this.conexao.Desconectar();
+            }
+        }
+
 
 
         public bool verficaCadastro = false;
@@ -59,9 +133,9 @@ namespace DAL
         public MySqlDataReader dr;
 
 
-        public DataTable VefificarCadastro(String nome, String cpf)
+        public DataTable VefificarCadastro(String nome)
         {
-            cmd.CommandText = "SELECT * FROM  cliente WHERE nome LIKE '%" + nome + "%' and cpf LIKE '%" + cpf + "%'";
+            cmd.CommandText = "SELECT * FROM  cliente WHERE nome LIKE '%" + nome + "%'";
 
             DataTable dt = new DataTable();
             try

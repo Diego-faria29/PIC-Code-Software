@@ -50,14 +50,53 @@ namespace BLL
             }
         }
 
+        public void Alterar(MODELOCliente modeloCliente)
+        {
+            try
+            {
+                string strPadrao2 = @"(^\d{3}\.\d{3}\.\d{3}\-\d{2}$)|(^\d{11}$)";
+                if (!System.Text.RegularExpressions.Regex.IsMatch(modeloCliente.Cpf, strPadrao2))
+                {
+                    throw new ArgumentNullException("CPF", "CPF Inválido");
+                }
+                string strPadrao = @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z";
+                if (!System.Text.RegularExpressions.Regex.IsMatch(modeloCliente.Email, strPadrao))
+                {
+                    throw new ArgumentNullException("Email", "E-mail Inválido");
+                }
+                if (modeloCliente.Nome == "")
+                {
+                    throw new ArgumentNullException("Nome", "Não pode ser vazio");
+                }
+                DALcliente.Alterar(modeloCliente);
+            }
+            catch (MySqlException error)
+            {
+                throw error;
+            }
+            catch (Exception error2)
+            {
+                throw error2;
+            }
+        }
 
-        public DataTable verificar(String nome, String cpf)
+        public void Excluir(int codigo)
+        {
+            if(codigo <= 0)
+            {
+                
+                throw new ArgumentNullException("ID", "Para deletar código, não pode estar zerado!");
+            }
+            DALcliente.Excluir(codigo);
+        }
+
+        public DataTable verificar(String nome)
         {
             if (!DALcliente.mensagem.Equals(""))
             {
                 this.mensagem = DALcliente.mensagem;
             }
-            return DALcliente.VefificarCadastro(nome, cpf);
+            return DALcliente.VefificarCadastro(nome);
         }
     }
 }

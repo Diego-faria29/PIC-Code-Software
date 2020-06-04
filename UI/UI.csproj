@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FRMAlterarcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAlterarcliente.Designer.cs">
+      <DependentUpon>FRMAlterarcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMBuscarvenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMBuscarvenda.Designer.cs">
+      <DependentUpon>FRMBuscarvenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,28 +75,43 @@
     <Compile Include="FRMconsulta.designer.cs">
       <DependentUpon>FRMconsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="FRMDeletarvenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="FRMDeletarvenda.Designer.cs">
+      <DependentUpon>FRMDeletarvenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMenu.Designer.cs">
+      <DependentUpon>FRMMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Venda.cs">
+    <Compile Include="FRMVenda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Venda.Designer.cs">
-      <DependentUpon>Venda.cs</DependentUpon>
+    <Compile Include="FRMVenda.Designer.cs">
+      <DependentUpon>FRMVenda.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FRMAlterarcliente.resx">
+      <DependentUpon>FRMAlterarcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMBuscarvenda.resx">
+      <DependentUpon>FRMBuscarvenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMCliente.resx">
       <DependentUpon>FRMCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMconsulta.resx">
       <DependentUpon>FRMconsulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="FRMDeletarvenda.resx">
+      <DependentUpon>FRMDeletarvenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMenu.resx">
+      <DependentUpon>FRMMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,8 +123,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Venda.resx">
-      <DependentUpon>Venda.cs</DependentUpon>
+    <EmbeddedResource Include="FRMVenda.resx">
+      <DependentUpon>FRMVenda.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

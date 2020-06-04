@@ -48,7 +48,7 @@
             this.LBLNome.AutoSize = true;
             this.LBLNome.BackColor = System.Drawing.Color.Transparent;
             this.LBLNome.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LBLNome.Location = new System.Drawing.Point(39, 101);
+            this.LBLNome.Location = new System.Drawing.Point(39, 157);
             this.LBLNome.Name = "LBLNome";
             this.LBLNome.Size = new System.Drawing.Size(72, 23);
             this.LBLNome.TabIndex = 0;
@@ -69,7 +69,7 @@
             // 
             this.LBLemail.AutoSize = true;
             this.LBLemail.BackColor = System.Drawing.Color.Transparent;
-            this.LBLemail.Location = new System.Drawing.Point(31, 178);
+            this.LBLemail.Location = new System.Drawing.Point(31, 221);
             this.LBLemail.Name = "LBLemail";
             this.LBLemail.Size = new System.Drawing.Size(80, 23);
             this.LBLemail.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             this.LBLCPF.AutoSize = true;
             this.LBLCPF.BackColor = System.Drawing.Color.Transparent;
-            this.LBLCPF.Location = new System.Drawing.Point(45, 260);
+            this.LBLCPF.Location = new System.Drawing.Point(39, 293);
             this.LBLCPF.Name = "LBLCPF";
             this.LBLCPF.Size = new System.Drawing.Size(58, 23);
             this.LBLCPF.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             this.LBLtelefone.AutoSize = true;
             this.LBLtelefone.BackColor = System.Drawing.Color.Transparent;
-            this.LBLtelefone.Location = new System.Drawing.Point(17, 343);
+            this.LBLtelefone.Location = new System.Drawing.Point(17, 359);
             this.LBLtelefone.Name = "LBLtelefone";
             this.LBLtelefone.Size = new System.Drawing.Size(100, 23);
             this.LBLtelefone.TabIndex = 4;
@@ -100,7 +100,7 @@
             this.LBLEndereco.AutoSize = true;
             this.LBLEndereco.BackColor = System.Drawing.Color.Transparent;
             this.LBLEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLEndereco.Location = new System.Drawing.Point(12, 425);
+            this.LBLEndereco.Location = new System.Drawing.Point(12, 426);
             this.LBLEndereco.Name = "LBLEndereco";
             this.LBLEndereco.Size = new System.Drawing.Size(105, 23);
             this.LBLEndereco.TabIndex = 5;
@@ -109,7 +109,7 @@
             // textBox1nome
             // 
             this.textBox1nome.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1nome.Location = new System.Drawing.Point(123, 98);
+            this.textBox1nome.Location = new System.Drawing.Point(123, 154);
             this.textBox1nome.Name = "textBox1nome";
             this.textBox1nome.Size = new System.Drawing.Size(549, 32);
             this.textBox1nome.TabIndex = 6;
@@ -118,26 +118,26 @@
             // textBox2email
             // 
             this.textBox2email.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2email.Location = new System.Drawing.Point(123, 175);
+            this.textBox2email.Location = new System.Drawing.Point(123, 218);
             this.textBox2email.Name = "textBox2email";
             this.textBox2email.Size = new System.Drawing.Size(549, 32);
             this.textBox2email.TabIndex = 7;
-            this.textBox2email.Text = "email@exemplo.com";
+            this.textBox2email.Text = "email@gmail.com";
             // 
             // textBox3CPF
             // 
             this.textBox3CPF.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3CPF.Location = new System.Drawing.Point(123, 257);
+            this.textBox3CPF.Location = new System.Drawing.Point(123, 290);
             this.textBox3CPF.Name = "textBox3CPF";
             this.textBox3CPF.Size = new System.Drawing.Size(549, 32);
             this.textBox3CPF.TabIndex = 8;
-            this.textBox3CPF.Text = "123.456.789-01";
+            this.textBox3CPF.Text = "123.456.789-10";
             // 
             // textBox4Telefone
             // 
             this.textBox4Telefone.BackColor = System.Drawing.SystemColors.Window;
             this.textBox4Telefone.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox4Telefone.Location = new System.Drawing.Point(123, 340);
+            this.textBox4Telefone.Location = new System.Drawing.Point(123, 356);
             this.textBox4Telefone.Name = "textBox4Telefone";
             this.textBox4Telefone.Size = new System.Drawing.Size(549, 32);
             this.textBox4Telefone.TabIndex = 9;
@@ -146,18 +146,18 @@
             // textBox5Endereco
             // 
             this.textBox5Endereco.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox5Endereco.Location = new System.Drawing.Point(123, 422);
+            this.textBox5Endereco.Location = new System.Drawing.Point(123, 423);
             this.textBox5Endereco.Name = "textBox5Endereco";
             this.textBox5Endereco.Size = new System.Drawing.Size(549, 32);
             this.textBox5Endereco.TabIndex = 10;
-            this.textBox5Endereco.Text = "Rua, número, bairro";
+            this.textBox5Endereco.Text = "Rua, numero, bairro";
             // 
             // BTNCad
             // 
             this.BTNCad.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BTNCad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTNCad.ForeColor = System.Drawing.SystemColors.Window;
-            this.BTNCad.Location = new System.Drawing.Point(540, 531);
+            this.BTNCad.Location = new System.Drawing.Point(540, 504);
             this.BTNCad.Name = "BTNCad";
             this.BTNCad.Size = new System.Drawing.Size(132, 37);
             this.BTNCad.TabIndex = 11;
@@ -198,7 +198,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(900, 1000);
             this.Name = "FRMCliente";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TREG.CONTROL. - CADASTRO DE CLIENTE ";
             this.TransparencyKey = System.Drawing.Color.Maroon;
             this.ResumeLayout(false);

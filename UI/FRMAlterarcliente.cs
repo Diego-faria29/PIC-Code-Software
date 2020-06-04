@@ -26,12 +26,26 @@ namespace SoftwarePIC
             try
             {
 
+                if(p == null)
+                {
+                    BOXAlteranome.Text = "";
+                    BOXAlteraemail.Text = "";
+                    BOXCpfaltera.Text = "";
+                    BOXTelAltera.Text = "";
+                    BOXEndaltera.Text = "";
+                    BOXIDaltera.Text = "";
+                    alterapropriedades(1);
+                }
+                else
+                {
                     BOXAlteranome.Text = p.Nome;
                     BOXAlteraemail.Text = p.Email;
                     BOXCpfaltera.Text = p.Cpf;
                     BOXTelAltera.Text = p.Telefone;
                     BOXEndaltera.Text = p.Endereco;
                     BOXIDaltera.Text = p.Id_cliente.ToString();
+                }
+
     
 
             }
@@ -51,9 +65,9 @@ namespace SoftwarePIC
         {
             UI.FRMconsulta f = new UI.FRMconsulta();
             f.ShowDialog();
-
-            popularcampos(f.modelcliente);
             alterapropriedades(2);
+            popularcampos(f.modelcliente);
+            
         }
 
         private void BTNalterar_Click(object sender, EventArgs e)

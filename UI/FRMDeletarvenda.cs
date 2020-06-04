@@ -26,9 +26,20 @@ namespace SoftwarePIC
         {
             try
             {
-                BOXIDpediedodeletavnd.Text = p.Id_pedido.ToString();
-                BOXVLdelvnd.Text = p.Valor_total.ToString();
-                BOXprodutoDL.Text = p.Produto.ToString();
+                if(p == null)
+                {
+                    BOXIDpediedodeletavnd.Text = "";
+                    BOXVLdelvnd.Text = "";
+                    BOXprodutoDL.Text = "";
+                    alterapropriedades(2);
+                }
+                else
+                {
+                    BOXIDpediedodeletavnd.Text = p.Id_pedido.ToString();
+                    BOXVLdelvnd.Text = p.Valor_total.ToString();
+                    BOXprodutoDL.Text = p.Produto.ToString();
+                }
+
             }
             catch (MySqlException error)
             {
@@ -46,19 +57,29 @@ namespace SoftwarePIC
         {
             FRMBuscarvenda dl = new FRMBuscarvenda();
             dl.ShowDialog();
-
+            alterapropriedades(3);
             popularcampos1(dl.modelvenda);
 
-            alterapropriedades(3);
+            
         }
         private void popularcampos(MODELOCliente p)
         {
             try
             {
+                if(p == null)
+                {
+                    BOXIDdeletavnd.Text = "";
+                    BOXNomeDL.Text = "";
+                    BOXCPFDl.Text = "";
+                    
+                }
+                else
+                {
+                    BOXIDdeletavnd.Text = p.Id_cliente.ToString();
+                    BOXNomeDL.Text = p.Nome;
+                    BOXCPFDl.Text = p.Cpf;
+                }
 
-                BOXIDdeletavnd.Text = p.Id_cliente.ToString();
-                BOXNomeDL.Text = p.Nome;
-                BOXCPFDl.Text = p.Cpf;
             }
             catch (MySqlException error)
             {
@@ -84,7 +105,6 @@ namespace SoftwarePIC
             catch (MySqlException error)
             {
                 MessageBox.Show("Falha ao deletar. Erro: " + error.Message);
-
             }
             catch (Exception error2)
             {
@@ -96,9 +116,9 @@ namespace SoftwarePIC
         {
             FRMconsulta dl = new FRMconsulta();
             dl.ShowDialog();
-
-            popularcampos(dl.modelcliente);
             alterapropriedades(2);
+            popularcampos(dl.modelcliente);
+            
         }
 
         public void alterapropriedades(int op)
@@ -110,6 +130,7 @@ namespace SoftwarePIC
             BTNConclienteDL.Enabled = false;
             BTNConsultavendadel.Enabled = false;
             BTNDeletar.Enabled = false;
+            PN_DL.Enabled = false;
             
             switch (op)
             {
@@ -119,11 +140,13 @@ namespace SoftwarePIC
                 case 2:
                     BTNConclienteDL.Enabled = true;
                     BTNConsultavendadel.Enabled = true;
+                    PN_DL.Enabled = true;
                     break;
                 case 3:
                     BTNConclienteDL.Enabled = true;
                     BTNConsultavendadel.Enabled = true;
                     BTNDeletar.Enabled = true;
+                    PN_DL.Enabled = true;
                     break;
             }
         }

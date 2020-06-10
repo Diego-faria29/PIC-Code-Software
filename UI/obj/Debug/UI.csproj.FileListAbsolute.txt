@@ -83,7 +83,6 @@ C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\bin\Debug\MODELO.pdb
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\bin\Debug\MySql.Data.xml
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\UI.csprojAssemblyReference.cache
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\UI.exe.config
-C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.FRMCliente.resources
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\UI.FRMconsulta.resources
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.Properties.Resources.resources
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\UI.csproj.GenerateResource.cache
@@ -97,3 +96,4 @@ C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.FRMAlterarcliente.resources
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.FRMDeletarvenda.resources
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.Menu.resources
+C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.FRMCADCliente.resources

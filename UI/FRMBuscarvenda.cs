@@ -41,10 +41,12 @@ namespace SoftwarePIC
             this.modelvenda.Id_cliente = Convert.ToInt32(dataGridViewBscVnd.Rows[e.RowIndex].Cells[2].Value.ToString());
             this.modelvenda.Produto = (dataGridViewBscVnd.Rows[e.RowIndex].Cells[3].Value.ToString());
             this.modelvenda.Quantidade = Convert.ToInt32(dataGridViewBscVnd.Rows[e.RowIndex].Cells[4].Value.ToString());
-            this.modelvenda.Valor_total = float.Parse(dataGridViewBscVnd.Rows[e.RowIndex].Cells[5].Value.ToString());
-            this.modelvenda.Forma_pagamento = (dataGridViewBscVnd.Rows[e.RowIndex].Cells[6].Value.ToString());
+            this.modelvenda.Valor_total = Convert.ToSingle(dataGridViewBscVnd.Rows[e.RowIndex].Cells[5].Value.ToString());
+            this.modelvenda.Forma_pagamento = dataGridViewBscVnd.Rows[e.RowIndex].Cells[6].Value.ToString();
 
             this.Close();
         }
+
+
     }
 }

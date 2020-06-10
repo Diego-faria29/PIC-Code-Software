@@ -1,6 +1,6 @@
 ﻿namespace SoftwarePIC
 {
-    partial class FRMCliente
+    partial class FRMCADCliente
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMCliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMCADCliente));
             this.LBLNome = new System.Windows.Forms.Label();
             this.CADCLIENTE = new System.Windows.Forms.Label();
             this.LBLemail = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.LBLNome.AutoSize = true;
             this.LBLNome.BackColor = System.Drawing.Color.Transparent;
             this.LBLNome.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LBLNome.Location = new System.Drawing.Point(39, 157);
+            this.LBLNome.Location = new System.Drawing.Point(39, 132);
             this.LBLNome.Name = "LBLNome";
             this.LBLNome.Size = new System.Drawing.Size(72, 23);
             this.LBLNome.TabIndex = 0;
@@ -69,7 +69,7 @@
             // 
             this.LBLemail.AutoSize = true;
             this.LBLemail.BackColor = System.Drawing.Color.Transparent;
-            this.LBLemail.Location = new System.Drawing.Point(31, 221);
+            this.LBLemail.Location = new System.Drawing.Point(31, 202);
             this.LBLemail.Name = "LBLemail";
             this.LBLemail.Size = new System.Drawing.Size(80, 23);
             this.LBLemail.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             this.LBLCPF.AutoSize = true;
             this.LBLCPF.BackColor = System.Drawing.Color.Transparent;
-            this.LBLCPF.Location = new System.Drawing.Point(39, 293);
+            this.LBLCPF.Location = new System.Drawing.Point(39, 268);
             this.LBLCPF.Name = "LBLCPF";
             this.LBLCPF.Size = new System.Drawing.Size(58, 23);
             this.LBLCPF.TabIndex = 3;
@@ -89,7 +89,7 @@
             // 
             this.LBLtelefone.AutoSize = true;
             this.LBLtelefone.BackColor = System.Drawing.Color.Transparent;
-            this.LBLtelefone.Location = new System.Drawing.Point(17, 359);
+            this.LBLtelefone.Location = new System.Drawing.Point(17, 334);
             this.LBLtelefone.Name = "LBLtelefone";
             this.LBLtelefone.Size = new System.Drawing.Size(100, 23);
             this.LBLtelefone.TabIndex = 4;
@@ -100,7 +100,7 @@
             this.LBLEndereco.AutoSize = true;
             this.LBLEndereco.BackColor = System.Drawing.Color.Transparent;
             this.LBLEndereco.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLEndereco.Location = new System.Drawing.Point(12, 426);
+            this.LBLEndereco.Location = new System.Drawing.Point(12, 401);
             this.LBLEndereco.Name = "LBLEndereco";
             this.LBLEndereco.Size = new System.Drawing.Size(105, 23);
             this.LBLEndereco.TabIndex = 5;
@@ -109,7 +109,7 @@
             // textBox1nome
             // 
             this.textBox1nome.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox1nome.Location = new System.Drawing.Point(123, 154);
+            this.textBox1nome.Location = new System.Drawing.Point(123, 129);
             this.textBox1nome.Name = "textBox1nome";
             this.textBox1nome.Size = new System.Drawing.Size(549, 32);
             this.textBox1nome.TabIndex = 6;
@@ -118,7 +118,7 @@
             // textBox2email
             // 
             this.textBox2email.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2email.Location = new System.Drawing.Point(123, 218);
+            this.textBox2email.Location = new System.Drawing.Point(123, 199);
             this.textBox2email.Name = "textBox2email";
             this.textBox2email.Size = new System.Drawing.Size(549, 32);
             this.textBox2email.TabIndex = 7;
@@ -127,7 +127,7 @@
             // textBox3CPF
             // 
             this.textBox3CPF.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox3CPF.Location = new System.Drawing.Point(123, 290);
+            this.textBox3CPF.Location = new System.Drawing.Point(123, 265);
             this.textBox3CPF.Name = "textBox3CPF";
             this.textBox3CPF.Size = new System.Drawing.Size(549, 32);
             this.textBox3CPF.TabIndex = 8;
@@ -137,16 +137,16 @@
             // 
             this.textBox4Telefone.BackColor = System.Drawing.SystemColors.Window;
             this.textBox4Telefone.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox4Telefone.Location = new System.Drawing.Point(123, 356);
+            this.textBox4Telefone.Location = new System.Drawing.Point(123, 331);
             this.textBox4Telefone.Name = "textBox4Telefone";
             this.textBox4Telefone.Size = new System.Drawing.Size(549, 32);
             this.textBox4Telefone.TabIndex = 9;
-            this.textBox4Telefone.Text = "35 4002-8922";
+            this.textBox4Telefone.Text = "35 3221-1223";
             // 
             // textBox5Endereco
             // 
             this.textBox5Endereco.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox5Endereco.Location = new System.Drawing.Point(123, 423);
+            this.textBox5Endereco.Location = new System.Drawing.Point(123, 398);
             this.textBox5Endereco.Name = "textBox5Endereco";
             this.textBox5Endereco.Size = new System.Drawing.Size(549, 32);
             this.textBox5Endereco.TabIndex = 10;
@@ -165,7 +165,7 @@
             this.BTNCad.UseVisualStyleBackColor = false;
             this.BTNCad.Click += new System.EventHandler(this.BTNCad_Click);
             // 
-            // FRMCliente
+            // FRMCADCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +197,7 @@
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(900, 1000);
-            this.Name = "FRMCliente";
+            this.Name = "FRMCADCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TREG.CONTROL. - CADASTRO DE CLIENTE ";
             this.TransparencyKey = System.Drawing.Color.Maroon;

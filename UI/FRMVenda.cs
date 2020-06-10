@@ -43,10 +43,13 @@ namespace SoftwarePIC
                 modelovenda.Forma_pagamento = BOXFormapag.Text;
 
 
-
-
                 bllvenda.Vender(modelovenda);
                 MessageBox.Show("Venda concluida!!");
+                BOXID_cliente.Text = "";
+                BOXproduto.Text = "";
+                BOXQnt.Text = "";
+                BOXVl.Text = "";
+                BOXFormapag.Text =  "";
             }
             catch (MySqlException error)
             {
@@ -93,32 +96,10 @@ namespace SoftwarePIC
             f.ShowDialog();
 
            popularcampos(f.modelcliente);
-            alterapropriedades(2);
+
         }
 
 
-        public void alterapropriedades(int op)
-        {
-            //op = operacao
-            // 1 = Buscar
-            // 2 = Buscar | alterar | deletar
-            BTNConsultac.Enabled = false;
-            BTNVender.Enabled = false;
-            switch (op)
-            {
-                case 1:
-                    BTNConsultac.Enabled = true;
-                    break;
-                case 2:
-                    BTNVender.Enabled = true;
-                    BTNConsultac.Enabled = true;
-                    break;
-            }
-        }
 
-        private void FRMVenda_Load(object sender, EventArgs e)
-        {
-            alterapropriedades(1);
-        }
     }
 }

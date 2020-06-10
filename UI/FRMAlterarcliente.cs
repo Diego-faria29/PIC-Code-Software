@@ -89,6 +89,15 @@ namespace SoftwarePIC
 
                 bllcliente.Alterar(modelocliente);
                 MessageBox.Show("Cliente alterado com sucesso!");
+                BOXAlteranome.Text = "";
+                BOXAlteraemail.Text = "";
+                BOXCpfaltera.Text = "";
+                BOXTelAltera.Text = "";
+                BOXEndaltera.Text = "";
+                BOXIDaltera.Text = "";
+                alterapropriedades(1);
+
+
             }
             catch (MySqlException error)
             {
@@ -117,6 +126,13 @@ namespace SoftwarePIC
                 BLLCLiente bllcliente = new BLLCLiente(cx);
                 bllcliente.Excluir(Convert.ToInt32(BOXIDaltera.Text));
                 MessageBox.Show("Cliente deletado com sucesso!");
+                BOXAlteranome.Text = "";
+                BOXAlteraemail.Text = "";
+                BOXCpfaltera.Text = "";
+                BOXTelAltera.Text = "";
+                BOXEndaltera.Text = "";
+                BOXIDaltera.Text = "";
+                alterapropriedades(1);
             }
             catch (MySqlException error)
             {

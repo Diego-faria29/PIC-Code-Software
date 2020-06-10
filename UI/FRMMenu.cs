@@ -26,7 +26,7 @@ namespace SoftwarePIC
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FRMCliente c = new FRMCliente();
+            FRMCADCliente c = new FRMCADCliente();
             c.ShowDialog();
         }
 

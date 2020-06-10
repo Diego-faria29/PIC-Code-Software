@@ -15,9 +15,9 @@ using UI;
 
 namespace SoftwarePIC
 {
-    public partial class FRMCliente : Form
+    public partial class FRMCADCliente : Form
     {
-        public FRMCliente()
+        public FRMCADCliente()
         {
             InitializeComponent();
         }
@@ -40,8 +40,13 @@ namespace SoftwarePIC
 
 
                 bllcliente.Incluir(modelocliente);
-               // textboxIDclientcad.Text = modelocliente.Id_cliente.ToString();
                 MessageBox.Show("Cliente inserido com sucesso!") ;
+                textBox1nome.Text = "Insira o nome";
+                textBox2email.Text= "email@gmail.com";
+                textBox3CPF.Text=  "123.456.789-10";
+                textBox4Telefone.Text = "35 3221-1223";
+                textBox5Endereco.Text = "Rua, numero, bairro";
+
             }
             catch (MySqlException error)
             {

@@ -229,7 +229,6 @@
             this.Name = "FRMVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TREG.CONTROL. - VENDAS";
-            this.Load += new System.EventHandler(this.FRMVenda_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

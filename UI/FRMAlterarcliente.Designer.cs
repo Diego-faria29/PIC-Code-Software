@@ -239,12 +239,12 @@
             this.LBLbsc.AutoSize = true;
             this.LBLbsc.BackColor = System.Drawing.Color.Transparent;
             this.LBLbsc.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLbsc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LBLbsc.Location = new System.Drawing.Point(98, 514);
+            this.LBLbsc.ForeColor = System.Drawing.Color.Black;
+            this.LBLbsc.Location = new System.Drawing.Point(309, 514);
             this.LBLbsc.Name = "LBLbsc";
-            this.LBLbsc.Size = new System.Drawing.Size(299, 23);
+            this.LBLbsc.Size = new System.Drawing.Size(292, 23);
             this.LBLbsc.TabIndex = 26;
-            this.LBLbsc.Text = "Busque para alterar ou deletar:";
+            this.LBLbsc.Text = "Busque para alterar ou deletar\r\n";
             // 
             // FRMAlterarcliente
             // 

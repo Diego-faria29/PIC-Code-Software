@@ -46,6 +46,7 @@
             this.LBLDeletar = new System.Windows.Forms.Label();
             this.BTNConclienteDL = new System.Windows.Forms.Button();
             this.PN_DL = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.PN_DL.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -241,6 +242,16 @@
             this.PN_DL.Size = new System.Drawing.Size(626, 331);
             this.PN_DL.TabIndex = 41;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(152, 413);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 23);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Consulte para deletar";
+            // 
             // FRMDeletarvenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
@@ -248,6 +259,7 @@
             this.BackgroundImage = global::SoftwarePIC.Properties.Resources.WhatsApp_Image_2020_06_03_at_23_56_30;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 617);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PN_DL);
             this.Controls.Add(this.BTNConclienteDL);
             this.Controls.Add(this.LBLDeletar);
@@ -287,5 +299,6 @@
         private System.Windows.Forms.Label LBLDeletar;
         private System.Windows.Forms.Button BTNConclienteDL;
         private System.Windows.Forms.Panel PN_DL;
+        private System.Windows.Forms.Label label1;
     }
 }

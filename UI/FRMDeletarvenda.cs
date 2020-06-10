@@ -101,6 +101,13 @@ namespace SoftwarePIC
                 BLLVenda bllpedido = new BLLVenda(cx);
                 bllpedido.Excluir(Convert.ToInt32(BOXIDpediedodeletavnd.Text));
                 MessageBox.Show("Venda deletada com sucesso!");
+                BOXIDdeletavnd.Text = "";
+                BOXNomeDL.Text = "";
+                BOXCPFDl.Text = "";
+                BOXIDpediedodeletavnd.Text = "";
+                BOXVLdelvnd.Text = "";
+                BOXprodutoDL.Text = "";
+                alterapropriedades(1);
             }
             catch (MySqlException error)
             {

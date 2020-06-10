@@ -69,5 +69,15 @@ namespace SoftwarePIC.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2020_06_03_at_23_56_30 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2020-06-03 at 23.56.30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

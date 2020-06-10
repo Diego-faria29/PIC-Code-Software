@@ -96,3 +96,4 @@ C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.FRMVenda.resources
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.FRMAlterarcliente.resources
 C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.FRMDeletarvenda.resources
+C:\Users\digui\OneDrive\Área de Trabalho\copy\project\UI\obj\Debug\SoftwarePIC.Menu.resources

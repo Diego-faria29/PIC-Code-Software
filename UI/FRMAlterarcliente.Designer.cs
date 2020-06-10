@@ -73,6 +73,7 @@
             // 
             this.LBLAlteraemail.AutoSize = true;
             this.LBLAlteraemail.BackColor = System.Drawing.Color.Transparent;
+            this.LBLAlteraemail.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LBLAlteraemail.Location = new System.Drawing.Point(10, 116);
             this.LBLAlteraemail.Name = "LBLAlteraemail";
             this.LBLAlteraemail.Size = new System.Drawing.Size(80, 23);
@@ -147,7 +148,7 @@
             this.LBLalterardeletar.AutoSize = true;
             this.LBLalterardeletar.BackColor = System.Drawing.Color.Transparent;
             this.LBLalterardeletar.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLalterardeletar.Location = new System.Drawing.Point(226, 30);
+            this.LBLalterardeletar.Location = new System.Drawing.Point(220, 54);
             this.LBLalterardeletar.Name = "LBLalterardeletar";
             this.LBLalterardeletar.Size = new System.Drawing.Size(320, 30);
             this.LBLalterardeletar.TabIndex = 19;
@@ -205,7 +206,7 @@
             // 
             // BOXIDaltera
             // 
-            this.BOXIDaltera.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BOXIDaltera.BackColor = System.Drawing.Color.White;
             this.BOXIDaltera.Enabled = false;
             this.BOXIDaltera.ForeColor = System.Drawing.Color.Black;
             this.BOXIDaltera.Location = new System.Drawing.Point(587, 345);
@@ -238,6 +239,7 @@
             this.LBLbsc.AutoSize = true;
             this.LBLbsc.BackColor = System.Drawing.Color.Transparent;
             this.LBLbsc.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLbsc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.LBLbsc.Location = new System.Drawing.Point(98, 514);
             this.LBLbsc.Name = "LBLbsc";
             this.LBLbsc.Size = new System.Drawing.Size(299, 23);
@@ -248,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SoftwarePIC.Properties.Resources.color_2174049_1280;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 617);
             this.Controls.Add(this.LBLbsc);

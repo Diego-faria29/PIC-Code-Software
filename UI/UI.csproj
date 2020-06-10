@@ -87,6 +87,11 @@
     <Compile Include="FRMMenu.Designer.cs">
       <DependentUpon>FRMMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Menu.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FRMVenda.cs">
@@ -112,6 +117,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMMenu.resx">
       <DependentUpon>FRMMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -155,6 +164,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\color-2174049_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pictureBox1.Image.png" />
+    <None Include="Resources\WhatsApp Image 2020-06-03 at 23.56.30.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

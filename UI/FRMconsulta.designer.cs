@@ -98,7 +98,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BackgroundImage = global::SoftwarePIC.Properties.Resources.color_2174049_1280;
+            this.BackgroundImage = global::SoftwarePIC.Properties.Resources.WhatsApp_Image_2020_06_03_at_23_56_30;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 617);
             this.Controls.Add(this.LBLconsclientnome);

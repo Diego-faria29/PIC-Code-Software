@@ -76,9 +76,15 @@ namespace SoftwarePIC
         private void popularcampos(MODELOCliente p)
         {
 
+            if (p == null)
+            {
+                BOXID_cliente.Text =  "";
 
-            BOXID_cliente.Text = p.Id_cliente.ToString();
-
+            }
+            else
+            {
+                BOXID_cliente.Text = p.Id_cliente.ToString();
+            }
 
         }
         private void BTNConsultac_Click(object sender, EventArgs e)
